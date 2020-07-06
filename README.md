@@ -1,3 +1,3 @@
 ## 🔍 react-img-zoom
 
-> (WIP) An experimental use of svg to zoom over images.
+> (WIP) An experimental use of SVG to zoom images inline.
