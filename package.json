@@ -9,9 +9,11 @@
   "license": "MIT",
   "scripts": {
     "lint": "standard",
-    "format": "prettier-standard --format"
+    "format": "prettier-standard --format",
+    "precommit": "lint-staged"
   },
   "devDependencies": {
+    "lint-staged": "^10.2.11",
     "prettier-standard": "^16.3.0",
     "standard": "^14.3.4"
   },
@@ -29,6 +31,11 @@
       "expect",
       "afterAll",
       "jest"
+    ]
+  },
+  "lint-staged": {
+    "*": [
+      "prettier-standard --lint"
     ]
   }
 }
