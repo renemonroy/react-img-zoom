@@ -6,5 +6,29 @@
   "jsnext:main": "dist/index.es.js",
   "author": "renemonroy <rene.monroy@gmail.com>",
   "repository": "git@github.com:renemonroy/react-img-zoom.git",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "lint": "standard",
+    "format": "prettier-standard --format"
+  },
+  "devDependencies": {
+    "prettier-standard": "^16.3.0",
+    "standard": "^14.3.4"
+  },
+  "peerDependencies": {},
+  "dependencies": {},
+  "standard": {
+    "ignore": [
+      "node_modules/",
+      "build/"
+    ],
+    "globals": [
+      "describe",
+      "it",
+      "test",
+      "expect",
+      "afterAll",
+      "jest"
+    ]
+  }
 }
