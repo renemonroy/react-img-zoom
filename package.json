@@ -1,0 +1,10 @@
+{
+  "name": "@rene/react-img-zoom",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "author": "renemonroy <rene.monroy@gmail.com>",
+  "repository": "git@github.com:renemonroy/react-img-zoom.git",
+  "license": "MIT"
+}
