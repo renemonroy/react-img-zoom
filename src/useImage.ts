@@ -1,8 +1,6 @@
 import * as React from "react";
 import { IImageState, TStatus } from "./useImage.types";
 
-// const cache = new Map();
-
 const LOADING: TStatus = "LOADING";
 const LOADED: TStatus = "LOADED";
 const FAILED: TStatus = "FAILED";

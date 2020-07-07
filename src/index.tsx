@@ -46,7 +46,6 @@ export default function ImgZoom(props: IImgZoomProps): JSX.Element {
   }
 
   function handleMouseOut() {
-    console.log("alkdsma");
     if (image && bgRef.current) {
       fgCtx?.clearRect(0, 0, width, height);
     }
