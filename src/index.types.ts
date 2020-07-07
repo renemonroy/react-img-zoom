@@ -3,3 +3,8 @@ export interface IImgZoomProps {
   width: number,
   src: string
 };
+
+export interface IImgDimensions {
+  height: number,
+  width: number
+}

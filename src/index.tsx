@@ -13,6 +13,8 @@ export default function ImgZoom(props: IImgZoomProps): JSX.Element {
     null,
   );
 
+  const percent = 0.5;
+
   React.useEffect((): void => {
     if (status === "LOADED" && image !== undefined) {
       const bgContext = bgRef.current!.getContext(
@@ -31,12 +33,14 @@ export default function ImgZoom(props: IImgZoomProps): JSX.Element {
     const y: number = e.clientY;
 
     if (image && bgRef.current) {
+      const sWidth = image.width * percent;
+      const sHeight = image.height * percent;
       fgCtx?.drawImage(
         bgRef.current,
-        Math.min(Math.max(0, x - 50), image.width - 100),
-        Math.min(Math.max(0, y - 50), image.height - 100),
-        100,
-        100,
+        Math.min(Math.max(0, x - sWidth / 2), sWidth),
+        Math.min(Math.max(0, y - sHeight / 2), sHeight),
+        sWidth,
+        sHeight,
         0,
         0,
         width,
