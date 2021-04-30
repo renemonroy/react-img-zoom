@@ -1,5 +1,4 @@
 import * as React from "react";
-
 import { IImgZoomProps } from "./index.types";
 import { useImage } from "./useImage";
 
